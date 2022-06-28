@@ -170,5 +170,7 @@ elif setting == "The Distressed Spaceship":
         quit()
     else:
         print(f'invalid response! You lose!')
+elif setting == "Ice Cream":
+    print("You are a true hacker! You super win the game!")
 else:
     print(f'invalid response! You lose!')
