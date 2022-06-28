@@ -5,7 +5,7 @@ if start == 'play':
     print("Great lets play the game!")
     setting = input("Want to go to \'The Abandoned Building\' or \'The Distressed Spaceship\' ")
 else:
-    print(f'Lame {name}\! Okay your\'re dead now!')
+    print(f'Lame {name}! Okay your\'re dead now!')
     quit()
 
 if setting == 'The Abandoned Building':
