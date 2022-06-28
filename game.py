@@ -23,9 +23,10 @@ if setting == 'The Abandoned Building':
             elif response == 'enter':
                 print("You enter the abandonded building. As you enter you see shattered glass and rubble all over the floors, the walls covered in graffiti and a you see a open door leading to a staircase to the next level.")
                 response = input("Do you wait in the \'foyer\' or do you go up the \'stairs\'? ")
-            else:
-                print('invalid respone! You lose and your team was never seen again!')
-                if response == 'stairs':
+                if response == "foyer":
+                    print("You are arrested for trespassing. Later convicted of murder of the team members as they were all found dead in the building days later.")
+                    quit()
+                elif response == "stairs":
                     print('You climb the staircase and see a madman with a bat about to beat your friends')
                     response = input("Do you \'attack\' the madman from behind or \'do nothing\'? ")
                     if response == 'attack':
@@ -36,11 +37,11 @@ if setting == 'The Abandoned Building':
                         quit()
                     else:
                         print('invalid respone! You lose and your team was never seen again!')
-                elif response == 'foyer':
-                    print("You are arrested for trespassing. Later convicted of murder of the team members as they were all found dead in the building days later.")
-                    quit()
                 else:
                     print('invalid respone! You lose and your team was never seen again!')
+
+            else:
+                print('invalid respone! You lose and your team was never seen again!')
         elif response == 'enter':
             print("You enter the abandonded building. As you enter you see shattered glass and rubble all over the floors, the walls covered in graffiti and a you see a open door leading to a staircase to the next level.")
             response = input("Do you wait in the \'foyer\' or do you go up the \'stairs\'? ")
